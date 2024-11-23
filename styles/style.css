@@ -29,11 +29,12 @@
 .header__link {
   position: relative;
   left: 4px;
-  border-bottom: 1px solid black;
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-position: under;
 }
 
 .header__link_active {
+  position: static;
   text-decoration: none;
 }
 
@@ -300,8 +301,8 @@
 }
 
 .footer__menu-link {
-  border-bottom: 1px solid black;
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-position: under;
 }
 
 .footer__menu-link_active {
