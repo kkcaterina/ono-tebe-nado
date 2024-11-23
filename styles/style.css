@@ -30,6 +30,11 @@
   position: relative;
   left: 4px;
   border-bottom: 1px solid black;
+  text-decoration: none;
+}
+
+.header__link_active {
+  text-decoration: none;
 }
 
 .header__logo {
@@ -49,19 +54,13 @@
 }
 
 .header__address {
-  padding: 5px 0 0 186px;
+  padding: 5px 0 0 187px;
 }
 
-.phone,
-.mail {
+.contacts {
   border-bottom: 1px solid black;
   letter-spacing: 0.01em;
   text-decoration: none;
-}
-
-.phone,
-.location {
-  padding-left: 1px;
 }
 
 .cover {
@@ -84,7 +83,7 @@
 
 .cover__title {
   position: relative;
-  padding: 166px 0 0 50px;
+  padding: 166px 50px 0 50px;
   color: white;
   font-weight: 700;
   font-size: 100px;
@@ -100,23 +99,21 @@
 }
 
 .aligned-text_center {
-  padding-right: 49px;
   line-height: 1.39;
   text-align: center;
 }
 
 .aligned-text_right {
-  padding-right: 20px;
   line-height: 1.01;
   text-align: right;
 }
 
 .letter-spacing-extended {
-  letter-spacing: 0.3em;
+  letter-spacing: 0.6em;
 }
 
 .no-letter-spacing {
-  letter-spacing: 0.6em;
+  letter-spacing: initial;
 }
 
 .cover__description {
@@ -132,23 +129,7 @@
   font-size: 22px;
   line-height: 28px;
   text-transform: uppercase;
-  word-spacing: 20px;
-}
-
-.cover__description-text-spacing-17 {
-  word-spacing: 17px;
-}
-
-.cover__description-text-spacing-18 {
-  word-spacing: 18px;
-}
-
-.cover__description-text-spacing-19 {
-  word-spacing: 19px;
-}
-
-.cover__description-text-spacing-20 {
-  word-spacing: 20px;
+  word-spacing: 18.5px;
 }
 
 .bet-button {
@@ -156,9 +137,10 @@
   border: solid white 1px;
   padding: 12px 32px;
   color: white;
+  font-family: Raleway, sans-serif;
   font-weight: 500;
   font-size: 22px;
-  line-height: 25.3px;
+  line-height: 25.83px;
   text-transform: uppercase;
   background-color: transparent;
 }
@@ -246,23 +228,24 @@
   border-bottom: solid black 1px;
   font-size: 20px;
   line-height: 23.5px;
+  text-decoration: none;
   text-transform: lowercase;
 }
 
 .about {
   display: grid;
   grid-template-columns: 334px 1fr;
-  grid-template-rows: 240px 1fr;
   align-items: center;
   align-self: center;
   padding: 2px 24px;
 }
 
-.column__first {
+.column__logo {
+  padding-bottom: 320px;
   padding-left: 47px;
 }
 
-.column__second {
+.column__content {
   padding-left: 25px;
 }
 
@@ -280,7 +263,7 @@
 }
 
 .about__title {
-  padding-top: 10px;
+  padding-top: 102px;
   font-weight: 700;
   font-size: 40px;
   line-height: 47px;
@@ -296,31 +279,11 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding-top: 8px;
+  padding-top: 99px;
 }
 
-.about__text-spacing-0 {
-  letter-spacing: 0;
-}
-
-.about__text-spacing-1 {
+.about__text-spacing {
   letter-spacing: 0.01em;
-}
-
-.about__text-spacing-2 {
-  letter-spacing: 0.02em;
-}
-
-.about__text-spacing-3 {
-  letter-spacing: 0.03em;
-}
-
-.about__text-spacing-4 {
-  letter-spacing: 0.04em;
-}
-
-.about__text-spacing-n1 {
-  letter-spacing: -0.01em;
 }
 
 .footer {
@@ -338,6 +301,11 @@
 
 .footer__menu-link {
   border-bottom: 1px solid black;
+  text-decoration: none;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
 }
 
 .footer__social-list {
